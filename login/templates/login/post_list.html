@@ -1,0 +1,14 @@
+<!-- this block gives post objects in web page -->
+
+{%block content%}
+{%for Post in posts%}
+
+{{Post.published_dates}}
+{{Post.title}}
+{{Post.text|linebreaksbr}}
+<br>
+
+
+{%endfor%}
+
+{%endblock%}
